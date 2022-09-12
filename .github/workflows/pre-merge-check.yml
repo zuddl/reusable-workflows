@@ -1,6 +1,8 @@
 name: "pre MR check"
 
 on:
+  push:
+  workflow_call:
   pull_request_target:
     types:
       - opened
