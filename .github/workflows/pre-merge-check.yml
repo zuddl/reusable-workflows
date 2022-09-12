@@ -6,8 +6,6 @@ on:
       - opened
       - edited
 
-permissions:
-  pull-requests: write
 
 jobs:
   master-tests:
