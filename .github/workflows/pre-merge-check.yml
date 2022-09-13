@@ -1,13 +1,14 @@
 name: "pre MR check"
 
 on:
-  pull_request_comment:
   pull_request:
     branches:
       - master
       - staging
       - pre-prod
     types:
+      - synchronize
+      - reopened
       - opened
       - edited
       - assigned
