@@ -1,12 +1,19 @@
 name: "pre MR check"
 
 on:
-  push:
-  workflow_call:
+  issue_comment:
   pull_request:
+    branches:
+      - master
+      - staging
+      - pre-prod
     types:
       - opened
       - edited
+      - assigned
+      - unassigned
+      - labeled
+      - unlabeled
 
 
 jobs:
